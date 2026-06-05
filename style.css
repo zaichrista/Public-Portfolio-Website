@@ -2477,9 +2477,18 @@ h1 {
 
   .hero h1 {
     width: 100% !important;
-    font-size: clamp(42px, 13vw, 58px) !important;
-    line-height: .88 !important;
-    letter-spacing: -.08em !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    font-size: clamp(36px, 11vw, 48px) !important;
+    line-height: .96 !important;
+    letter-spacing: -.06em !important;
+    white-space: normal !important;
+    word-break: normal !important;
+  }
+
+  .hero h1 span {
+    display: inline !important;
+    white-space: normal !important;
   }
 
   .hero .intro {
@@ -2585,6 +2594,13 @@ h1 {
     gap: 28px !important;
   }
 
+  .contact h2 {
+    font-size: clamp(46px, 14vw, 64px) !important;
+    line-height: .92 !important;
+    letter-spacing: -.07em !important;
+    overflow-wrap: anywhere !important;
+  }
+
   .contact-details {
     align-items: flex-start !important;
   }
@@ -2595,10 +2611,7 @@ h1 {
   }
 
   .footer-wordmark {
-    font-size: clamp(54px, 20vw, 88px) !important;
-    letter-spacing: -.1em !important;
-    white-space: normal !important;
-    line-height: .82 !important;
+    display: none !important;
   }
 
   .panel-close {
